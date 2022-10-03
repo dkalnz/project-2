@@ -18,12 +18,13 @@ _AAU,_
 - I want an app that is easy to access on any device, and fast
 - I want an app with a great design so I can focus on focusing on nothing
 - I want an app with no ads or paywalls, as that is the opposite of de-stressing
-- I want to be able to remember the times
+- I want to be able to remember the times that I was able to grow on my own
+- I want an app that will remind me to remind myself that I'm awesome without being intrusive
 
 ### **MVP Stretch Goals** (silver)
 
 This list was hard to make due to what I realized I couldn't yet make. The MVP is about as bare-bones as it gets
-- Material UI-- This was almost included in MVP, but I just wasn't sure of where I'd be with time complexity.
+- [Material UI](https://mui.com/)-- This was almost included in MVP, but I just wasn't sure of where I'd be with time complexity.
 - More customisable interface
 - Choose quotes by category/author/subject. The api is flexible as such.
 - More panels and overall interactivity, mostly surrounding wellness and mental health (use React Router)

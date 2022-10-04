@@ -1,24 +1,28 @@
 //App Object
-import { useEffect } from 'react';
+import { F } from './GetNewQuote';
+
+const newQuote = (
+	<form className='searchBar'>
+		<input type='text' placeholder='Category Search' />
+		<button type='submit'>Riddle Me That</button>
+	</form>
+);
+
 function App() {
 	//-----Fetch-----
 	// API REFERENCE - https://github.com/lukePeavey/quotable/blob/master/README.md#api-reference-
-
-	let urlCat = 'random';
-	const url = `https://api.quotable.io/${urlCat}`;
-	const searchQuotes = async (title) => {
-		const response = await fetch(url);
-		//GET /random
-		const data = await response.json();
-		console.log(data); //JSON results
-	};
+	StartSearch();
 
 	//-----Search function-----
-	useEffect(() => {
-		searchQuotes('urlCat');
-	}, []);
+	//--See-hook-docs: https://reactjs.org/docs/hooks-effect.htmlhttps://reactjs.org/docs/hooks-effect.html
+	let quoteContent = F(searchQuotes);
 
 	//-----RETURN-----
-	return <div className='App'></div>;
+	return (
+		<div className='App'>
+			{newQuote}
+			<p id='quote'>{quoteContent}</p>
+		</div>
+	);
 }
 export default App;

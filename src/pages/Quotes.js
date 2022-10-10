@@ -3,29 +3,23 @@
 import { UseState, useEffect } from 'react';
 
 export default function Quotes() {
-	// return (
-	// 	<>
-	// 		<h2>Quote of the Day</h2>
-	// 		<p>This is the Quotes Page</p>
-	// 	</>
-	// );
 	useEffect(() => {
-  // declare the async data fetching function
-  const fetchData = async () => {
-    // get the data from the api
-    const data = await fetch('https://yourapi.com');
-    // convert data to json
-    const json = await data.json();
-    return json;
-  }
+		// declare the async data fetching function
+		const fetchData = async () => {
+			// get the data from the api
+			const data = await fetch('https://yourapi.com');
+			// convert the data to json
+			const json = await response.json();
 
-  // call the function
-  const result = fetchData()
-    // make sure to catch any error
-    .catch(console.error);;
+			// set state with the result
+			setData(json);
+		};
 
-  // ❌ don't do this, it won't work as you expect!
-  setData(result);
-}, [])random
-	};
+		// call the function
+		fetchData()
+			// make sure to catch any error
+			.catch(console.error);
+	}, []);
 }
+
+// const url = `https://api.quotable.io/random`;

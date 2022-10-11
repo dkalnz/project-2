@@ -3,6 +3,7 @@ export default function Gallery() {
 		<>
 			<div className='gallery-page  fade-in-fast'>
 				<h3>Gallery Page</h3>
+				{/* render array of likes with CSS grid */}
 			</div>
 		</>
 	);

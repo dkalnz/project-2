@@ -8,6 +8,7 @@ import Breathe from './pages/Breathe';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
+	// parent state for array of likes
 	return (
 		<>
 			<Navbar />

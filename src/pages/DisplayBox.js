@@ -7,7 +7,7 @@ const DisplayBox = ({ quote }) => {
 	return (
 		<div className='box'>
 			<div className='content'>
-				<p>{quote}</p>
+				<p className='fade-in'>{quote}</p>
 			</div>
 		</div>
 	);

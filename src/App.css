@@ -4,16 +4,22 @@
 
 body {
 	margin: 0;
+	background-color: rgb(42, 42, 42);
+	color: #bbbbbb;
 }
 
 .container {
 	margin: 1rem;
 	text-align: center;
 }
+.container * {
+	font-size: 2rem;
+	line-height: 1.2em;
+}
 
 nav {
-	background-color: #333;
-	color: white;
+	background-color: rgb(31, 31, 31);
+	color: #9be2a1;
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
@@ -45,12 +51,30 @@ nav a {
 	font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 	font-size: 3em;
 	padding: 0 4rem;
+	color: inherit;
 }
 nav li.active {
-	background-color: #555;
+	background-color: rgb(59, 78, 53);
+	color: rgb(222, 123, 158);
 }
 nav li:hover {
-	background-color: #777;
+	background-color: rgb(89, 118, 80);
+}
+.fade-in {
+	animation: fillin 1s ease 500ms 1;
+	animation-fill-mode: backwards;
+}
+.fade-in-fast {
+	animation: fillin 0.3s ease 200ms 1;
+	animation-fill-mode: backwards;
+}
+@keyframes fillin {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @media only screen and (max-width: 1000px) {
 	.material-symbols-outlined {

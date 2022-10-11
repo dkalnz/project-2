@@ -24,8 +24,8 @@ function Quotes() {
 	}
 
 	return (
-		<div>
-			<h2>Quotes Page</h2>
+		<div className='quotes-page fade-in-fast'>
+			<h3>Quotes Page</h3>
 			<DisplayBox quote={quote} />
 		</div>
 	);

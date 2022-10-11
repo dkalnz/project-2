@@ -1,5 +1,6 @@
 //This is the home page
-//Link to API
+//Link to API:
+//const url = `https://api.quotable.io/random`;
 
 import { useState, useEffect } from 'react';
 import DisplayBox from './DisplayBox';
@@ -24,12 +25,10 @@ function Quotes() {
 
 	return (
 		<div className='quotes-page fade-in-fast'>
-			<h3>Quotes Page</h3>
+			<h3>Quote</h3>
 			<DisplayBox quote={quote} />
-			<button class='Like'>Like</button>
+			<button className='Like'>Like</button>
 		</div>
 	);
 }
 export default Quotes;
-
-// const url = `https://api.quotable.io/random`;

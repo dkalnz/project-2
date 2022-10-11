@@ -13,14 +13,21 @@ body {
 	text-align: center;
 }
 .container * {
-	font-size: 2rem;
+	font-size: 3rem;
 	line-height: 1.2em;
 }
 .container p {
-	font-size: 1.5rem;
-	margin: auto 10vw;
+	font-size: 2rem;
+	margin: auto 30vw;
 }
-
+button {
+	border-radius: 1em;
+	padding: 0.5em 0.7em;
+	font-weight: bold;
+	background-color: black;
+	color: rgb(222, 123, 158);
+	margin: 1em auto;
+}
 nav {
 	background-color: rgb(31, 31, 31);
 	color: #9be2a1;
@@ -63,6 +70,9 @@ nav li.active {
 }
 nav li:hover {
 	background-color: rgb(89, 118, 80);
+}
+h3 {
+	font-size: 5rem;
 }
 .italic {
 	font-style: italic;
@@ -108,6 +118,18 @@ nav li:hover {
 		padding: 0 1rem;
 		line-height: auto;
 		display: inline-flex;
+	}
+	.container * {
+		font-size: 2rem;
+	}
+	button {
+		border-radius: 0.5em;
+		padding: 0.2em 0.4em;
+		font-weight: bold;
+		font-size: 1em;
+		background-color: black;
+		color: rgb(222, 123, 158);
+		margin: 0.5em auto;
 	}
 }
 @media only screen and (max-width: 500px) {

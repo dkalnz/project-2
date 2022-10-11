@@ -16,6 +16,10 @@ body {
 	font-size: 2rem;
 	line-height: 1.2em;
 }
+.container p {
+	font-size: 1.5rem;
+	margin: auto 10vw;
+}
 
 nav {
 	background-color: rgb(31, 31, 31);
@@ -60,12 +64,21 @@ nav li.active {
 nav li:hover {
 	background-color: rgb(89, 118, 80);
 }
+.italic {
+	font-style: italic;
+	font-weight: lighter;
+	line-height: 2em;
+}
 .fade-in {
-	animation: fillin 1s ease 500ms 1;
+	animation: fillin 1.2s ease 2s 1;
 	animation-fill-mode: backwards;
 }
 .fade-in-fast {
-	animation: fillin 0.3s ease 200ms 1;
+	animation: fillin 700ms ease 0.8s 1;
+	animation-fill-mode: backwards;
+}
+.fade-in-med {
+	animation: fillin 850ms ease 1.6s 1;
 	animation-fill-mode: backwards;
 }
 @keyframes fillin {

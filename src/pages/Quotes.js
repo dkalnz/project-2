@@ -5,11 +5,9 @@ import { useState, useEffect } from 'react';
 import DisplayBox from './DisplayBox';
 
 function Quotes() {
-	let myQuote;
-	const [quote, setQuote] = useState();
+	const [quote, setQuote] = useState([]);
 	useEffect(() => {
 		getQuote();
-		console.log(`useEffect log ${quote}`);
 	}, []);
 	function getQuote() {
 		const url = 'https://api.quotable.io/random';
@@ -17,8 +15,9 @@ function Quotes() {
 		fetch(url)
 			.then((response) => response.json())
 			.then((response) => {
-				console.log(`fetch log ${response.content}`);
-				setQuote(response.content);
+				// console.log(`fetch log ${response.content}`);
+
+				setQuote([response.content, response.author]);
 			})
 			.catch(console.error);
 	}

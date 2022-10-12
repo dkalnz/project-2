@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
 }
 
 body {
@@ -93,6 +94,7 @@ nav li.active {
 nav li:hover {
 	background-color: rgb(89, 118, 80);
 }
+
 h3 {
 	font-size: 4rem;
 }
@@ -115,6 +117,14 @@ h3 {
 .fade-in-med {
 	animation: fillin 850ms ease 1.6s 1;
 	font-size: 0.8em;
+}
+.site-title li {
+	box-shadow: 0px 0px 0px 2px rgb(42, 42, 42);
+	transition: box-shadow 0.6s linear;
+	/* margin: 0.1em; */
+}
+.site-title li:hover {
+	box-shadow: 0px 0px 0px 5px rgb(106, 106, 106);
 }
 button.big-round {
 	border-radius: 300px;

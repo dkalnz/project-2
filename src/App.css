@@ -29,13 +29,14 @@ button#main {
 	border: 5px solid #a9a9a9;
 	padding: 0;
 	font-weight: bold;
-	background-color: rgb(68, 145, 71);
+	background-color: rgba(209, 209, 209, 0.35);
 	color: rgb(210, 146, 169);
 	margin: 1em auto;
 	height: 5em;
 	width: 5em;
 	text-align: center;
 	margin-bottom: 8vh;
+	flex: 3 1 auto;
 }
 #main:hover {
 	border: 8px solid black;
@@ -97,6 +98,7 @@ nav li:hover {
 
 h3 {
 	font-size: 4rem;
+	padding: 0.5em;
 }
 .quotes-page {
 	margin-top: 10vh;
@@ -113,6 +115,9 @@ h3 {
 .fade-in-fast {
 	animation: fillin 700ms ease 0.8s 1;
 	animation-fill-mode: backwards;
+	display: flex-column;
+	justify-content: center;
+	align-items: center;
 }
 .fade-in-med {
 	animation: fillin 850ms ease 1.6s 1;
@@ -128,7 +133,8 @@ h3 {
 }
 button.big-round {
 	border-radius: 300px;
-	background-image: linear-gradient(vertical, #009000, #006300);
+	background-color: rgba(209, 209, 209, 0.35);
+	/* background-image: linear-gradient(vertical, #009000, #006300); */
 	padding: 2rem;
 	margin: 15vh auto;
 	height: 25vh;

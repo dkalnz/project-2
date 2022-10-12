@@ -1,0 +1,2 @@
+## Why does this exist?
+> This directory exists due to a version control error that was fixed on the commit previous to the one that added this file. From the fragmented repos, all script files were dumped here so that snippets could be brought in piecemeal. See commit notes for details as each script or snippet was added from previous versions. 

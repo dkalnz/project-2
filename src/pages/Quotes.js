@@ -29,14 +29,14 @@ function Quotes(props, stateHandler) {
 			<DisplayBox quote={quote} />
 			<button
 				className='Like'
-				onClick={(e) => {
-					e.preventDefault();
-					let myObj = { ...{ text: quote[0], author: quote[1] } };
-					// console.log(myObj);
-					let temp = global;
-					setGlobal([...setGlobal, { text: myObj.text, author: myObj.author }]);
-					getQuote();
-				}}>
+				// onClick={(e) => {
+				// 	e.preventDefault();
+				// 	let myObj = { ...{ text: quote[0], author: quote[1] } };
+				// 	// console.log(myObj);
+				// 	let temp = global;
+				// 	setGlobal([...setGlobal, { text: myObj.text, author: myObj.author }]);
+				// 	getQuote();
+				// }}>
 				Like
 			</button>
 		</div>

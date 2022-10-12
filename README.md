@@ -2,18 +2,18 @@
 by Danny Kalne
 ----------
 
-### Official repo for Project 2
+## Official repo for Project 2
 *welcome!*
-Thanks for checking out my app!
+This will be updated in a flash!
 
-### Header 1
--item
+## Please
+- Stay tuned
 
-### Header 2
--item
+### Thank you for your patience
+- This is the last piece!
 
-### Header 3
--item
+#### Header
+- Super detailed
 
-### Header 4
--item
+#### Unoriginal Header Title
+- Thanks for reading

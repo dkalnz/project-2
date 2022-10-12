@@ -8,12 +8,10 @@ import Breathe from './pages/Breathe';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
-	const [quoteList, setQuoteList] = useState([
-		//{ text: 'text1', author: 'author1' },
-	]);
+	const [quoteList, setQuoteList] = useState({});
 	return (
 		<>
-			<Navbar {...quoteList} />
+			<Navbar />
 			<div className='container'>
 				<Routes>
 					<Route path='/' element={<Quotes />} />
@@ -25,4 +23,5 @@ function App() {
 		</>
 	);
 }
+
 export default App;

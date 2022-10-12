@@ -3,12 +3,13 @@ import { useEffect, useState } from 'react';
 
 export default function Navbar() {
 	const [global, setGlobal] = useState([]);
+	// console.log(`Navbar log: ${props}`);
 	return (
 		<nav className='site-title'>
 			<ul>
-				{/* <CustomLink to='/Gallery' props={global}>
+				<CustomLink to='/Gallery' props={global}>
 					<span className='material-symbols-outlined'>imagesmode</span>
-				</CustomLink> */}
+				</CustomLink>
 				<CustomLink to='/Quotes' props={global}>
 					<span className='material-symbols-outlined'>format_quote</span>
 				</CustomLink>

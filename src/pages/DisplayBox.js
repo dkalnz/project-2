@@ -8,7 +8,7 @@ const DisplayBox = ({ quote }) => {
 		<div className='box'>
 			<div className='content'>
 				<p className='fade-in-med'>{quote[0]}</p>
-				<p className='fade-in italic'>{`- ${quote[1]}`}</p>
+				<p className='fade-in italic'>{quote[1]}</p>
 			</div>
 		</div>
 	);

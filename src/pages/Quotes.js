@@ -27,6 +27,7 @@ function Quotes() {
 			<DisplayBox quote={quote} />
 			<button
 				className='Like'
+				id='main'
 				onClick={(e) => {
 					e.preventDefault();
 					// let myObj = [...quote, { text: quote[0], author: quote[1] }];
@@ -36,7 +37,9 @@ function Quotes() {
 					// props.setQuoteList = quote;
 					getQuote();
 				}}>
-				Like
+				<span className='material-symbols-outlined' id='reroll'>
+					autorenew
+				</span>
 			</button>
 		</div>
 	);

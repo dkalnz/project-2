@@ -5,6 +5,16 @@
 /.pnp
 .pnp.js
 
+# react snippets
+react-snippets.md
+
+# from GA repo
+./GA DOCS
+
+# for reference
+./old-scripts
+/public/robots.txt
+
 # testing
 /coverage
 

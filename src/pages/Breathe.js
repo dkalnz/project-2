@@ -19,10 +19,14 @@ export default function Breathe() {
 			</>
 		);
 	} else {
-		return redirect('/Quotes');
+		function reset() {}
+		reset(() => {
+			counter += 60;
+		});
 	}
-}
 
+	setCounter(counter + 60);
+}
 const Inside = () => {
 	const [buttonText, setButtonText] = useState('one minute');
 	<div

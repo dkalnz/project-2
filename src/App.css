@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	margin: 1rem;
+	margin: 0 1rem;
 	text-align: center;
 }
 .container * {
@@ -17,8 +17,8 @@ body {
 	line-height: 1.2em;
 }
 .container p {
-	font-size: 2rem;
-	margin: auto 30vw;
+	font-size: 1.7arem;
+	margin: 2vh 30vw;
 }
 button#main {
 	border-radius: 10em;
@@ -28,8 +28,8 @@ button#main {
 	background-color: rgb(0, 0, 0);
 	color: rgb(222, 123, 158);
 	margin: 1em auto;
-	height: 5em;
-	width: 5em;
+	height: 4em;
+	width: 4em;
 	text-align: center;
 }
 nav {
@@ -81,10 +81,10 @@ nav li:hover {
 	background-color: rgb(89, 118, 80);
 }
 h3 {
-	font-size: 5rem;
+	font-size: 4rem;
 }
 .quotes-page {
-	margin-top: 25vh;
+	margin-top: 15vh;
 }
 .italic {
 	font-style: italic;

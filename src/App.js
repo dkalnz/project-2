@@ -1,5 +1,5 @@
 //App Object
-import { useState, setState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './fcomps/Navbar';
 import Quotes from './pages/Quotes';
@@ -8,10 +8,12 @@ import Breathe from './pages/Breathe';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
-	// parent state for array of likes
+	const [quoteList, setQuoteList] = useState([
+		//{ text: 'text1', author: 'author1' },
+	]);
 	return (
 		<>
-			<Navbar />
+			<Navbar {...quoteList} />
 			<div className='container'>
 				<Routes>
 					<Route path='/' element={<Quotes />} />

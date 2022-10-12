@@ -1,13 +1,16 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
-export default function Navbar() {
+export default function Navbar(props) {
+	const [allQuotes, setAllQuotes] = useState([props]);
+	console.log(`Navbar log: ${props}`);
 	return (
 		<nav className='site-title'>
 			<ul>
-				<CustomLink to='/Gallery'>
+				<CustomLink to='/Gallery' props={allQuotes}>
 					<span className='material-symbols-outlined'>imagesmode</span>
 				</CustomLink>
-				<CustomLink to='/Quotes'>
+				<CustomLink to='/Quotes' props={allQuotes}>
 					<span className='material-symbols-outlined'>format_quote</span>
 				</CustomLink>
 				<CustomLink to='/Breathe'>

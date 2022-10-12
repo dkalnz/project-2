@@ -5,8 +5,9 @@
 import { useState, useEffect } from 'react';
 import DisplayBox from './DisplayBox';
 
-function Quotes() {
+function Quotes(props) {
 	const [quote, setQuote] = useState([]);
+	const [allQuotes, setAllQuotes] = useState([props]);
 	useEffect(() => {
 		getQuote();
 	}, []);
@@ -27,7 +28,20 @@ function Quotes() {
 		<div className='quotes-page fade-in-fast'>
 			<h3>Quote</h3>
 			<DisplayBox quote={quote} />
-			<button className='Like'>Like</button>
+			<button
+				className='Like'
+				onClick={(e) => {
+					e.preventDefault();
+					let myObj = { ...{ text: quote[0], author: quote[1] } };
+					console.log(myObj);
+					setAllQuotes([
+						...allQuotes,
+						{ text: myObj.text, author: myObj.author },
+					]);
+					getQuote();
+				}}>
+				Like
+			</button>
 		</div>
 	);
 }

@@ -1,4 +1,6 @@
-export default function Gallery() {
+import { useState, useEffect } from 'react';
+
+function Gallery() {
 	return (
 		<>
 			<div className='gallery-page  fade-in-fast'>
@@ -8,3 +10,5 @@ export default function Gallery() {
 		</>
 	);
 }
+
+export default Gallery;

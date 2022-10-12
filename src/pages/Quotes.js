@@ -5,9 +5,9 @@
 import { useState, useEffect } from 'react';
 import DisplayBox from './DisplayBox';
 
-function Quotes(props) {
+function Quotes(props, stateHandler) {
 	const [quote, setQuote] = useState([]);
-	const [allQuotes, setAllQuotes] = useState([props]);
+	// const [allQuotes, setAllQuotes] = useState([props]);
 	useEffect(() => {
 		getQuote();
 	}, []);
@@ -23,7 +23,6 @@ function Quotes(props) {
 			})
 			.catch(console.error);
 	}
-
 	return (
 		<div className='quotes-page fade-in-fast'>
 			<h3>Quote</h3>
@@ -33,11 +32,9 @@ function Quotes(props) {
 				onClick={(e) => {
 					e.preventDefault();
 					let myObj = { ...{ text: quote[0], author: quote[1] } };
-					console.log(myObj);
-					setAllQuotes([
-						...allQuotes,
-						{ text: myObj.text, author: myObj.author },
-					]);
+					// console.log(myObj);
+					let temp = global;
+					setGlobal([...setGlobal, { text: myObj.text, author: myObj.author }]);
 					getQuote();
 				}}>
 				Like

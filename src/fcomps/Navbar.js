@@ -1,16 +1,16 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-export default function Navbar(props) {
-	const [allQuotes, setAllQuotes] = useState([props]);
-	console.log(`Navbar log: ${props}`);
+export default function Navbar() {
+	const [global, setGlobal] = useState([]);
+	// console.log(`Navbar log: ${props}`);
 	return (
 		<nav className='site-title'>
 			<ul>
-				<CustomLink to='/Gallery' props={allQuotes}>
+				<CustomLink to='/Gallery' props={global}>
 					<span className='material-symbols-outlined'>imagesmode</span>
 				</CustomLink>
-				<CustomLink to='/Quotes' props={allQuotes}>
+				<CustomLink to='/Quotes' props={global}>
 					<span className='material-symbols-outlined'>format_quote</span>
 				</CustomLink>
 				<CustomLink to='/Breathe'>
